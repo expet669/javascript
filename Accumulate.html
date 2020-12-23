@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<!-- saved from url=(0123)file:///C:/Users/%EC%86%90%EB%AA%85%EC%9E%AC/Desktop/%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/Accumulate.html -->
+<html lang="en" dir="ltr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title></title>
+    <script type="text/javascript">
+    const numberWithCommas  = (x) => {
+      return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+    }
+    function myFunction() {
+      document.getElementById("demo").innerHTML = numberWithCommas(Math.floor(Math.random() * 9000)+1000)+"원";
+    }
+      
+
+
+    </script>
+    <style media="screen">
+      #demo{
+         border:1px solid black;
+         width:120px;
+
+      }
+      #cellPhone{
+         border:1px solid black;
+         width:120px;
+         height: 20px;
+
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Accumulate Manager</h1>
+    <h2>201722326_손명재</h2>
+    <hr>
+
+
+
+    적립할 금액:
+    <div id="demo">랜덤 금액</div>
+    <button type="button" onclick="myFunction()">Check</button>
+
+    <br>
+
+    Phone Number:
+    <div id="cellPhone"></div>
+      <button type="button" onclick="document.getElementById(&quot;cellPhone&quot;).innerHTML = document.getElementById(&quot;cellPhone&quot;).innerHTML+&quot;0&quot;">0</button>
+      <button type="button" onclick="document.getElementById(&quot;cellPhone&quot;).innerHTML = document.getElementById(&quot;cellPhone&quot;).innerHTML+&quot;1&quot;">1</button>
+      <button type="button" onclick="document.getElementById(&quot;cellPhone&quot;).innerHTML = document.getElementById(&quot;cellPhone&quot;).innerHTML+&quot;2&quot;">2</button>
+      <button type="button" onclick="document.getElementById(&quot;cellPhone&quot;).innerHTML = document.getElementById(&quot;cellPhone&quot;).innerHTML+&quot;3&quot;">3</button>
+      <button type="button" onclick="document.getElementById(&quot;cellPhone&quot;).innerHTML = document.getElementById(&quot;cellPhone&quot;).innerHTML+&quot;4&quot;">4</button>
+      <button type="button" onclick="document.getElementById(&quot;cellPhone&quot;).innerHTML = document.getElementById(&quot;cellPhone&quot;).innerHTML+&quot;5&quot;">5</button>
+      <button type="button" onclick="document.getElementById(&quot;cellPhone&quot;).innerHTML = document.getElementById(&quot;cellPhone&quot;).innerHTML+&quot;6&quot;">6</button>
+      <button type="button" onclick="document.getElementById(&quot;cellPhone&quot;).innerHTML = document.getElementById(&quot;cellPhone&quot;).innerHTML+&quot;7&quot;">7</button>
+      <button type="button" onclick="document.getElementById(&quot;cellPhone&quot;).innerHTML = document.getElementById(&quot;cellPhone&quot;).innerHTML+&quot;8&quot;">8</button>
+      <button type="button" onclick="document.getElementById(&quot;cellPhone&quot;).innerHTML = document.getElementById(&quot;cellPhone&quot;).innerHTML+&quot;9&quot;">9</button>
+      <button type="button" onclick="document.getElementById(&quot;cellPhone&quot;).innerHTML = document.getElementById(&quot;cellPhone&quot;).innerHTML.slice(0,-1)">X</button>
+      <button type="button" onclick="document.getElementById(&quot;cellPhone&quot;).innerHTML = &quot;&quot;">C</button>
+
+
+  
+
+
+</body></html>
